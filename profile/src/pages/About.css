@@ -1,0 +1,115 @@
+/* About Page Styles */
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 48px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+}
+.about-title {
+  color: #205081;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.about-title-underline {
+  width: 80px;
+  height: 4px;
+  background: #29b6f6;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+.about-desc {
+  color: #444;
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+}
+.about-content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+.about-img {
+  flex: 1 1 320px;
+  max-width: 380px;
+  min-width: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.about-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.about-info {
+  flex: 2 1 420px;
+  min-width: 320px;
+  padding-left: 0;
+}
+.about-info-title {
+  color: #205081;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.about-info-desc {
+  font-style: italic;
+  color: #4a6fa1;
+  margin-bottom: 18px;
+}
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 32px;
+  margin-bottom: 18px;
+}
+.about-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 32px 0 0;
+  min-width: 220px;
+}
+.about-details li {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+  color: #222;
+}
+.about-details li::before {
+  content: '\203A';
+  color: #29b6f6;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.about-details b {
+  font-weight: 600;
+}
+.about-footer {
+  color: #444;
+  font-size: 1.08rem;
+  margin-top: 18px;
+}
+@media (max-width: 900px) {
+  .about-content-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about-section {
+    padding: 18px 6vw 32px 6vw;
+  }
+  .about-img {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .about-info {
+    padding-left: 0;
+  }
+  .about-details ul {
+    margin-right: 0;
+    min-width: 0;
+  }
+}
